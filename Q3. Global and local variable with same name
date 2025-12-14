@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int x = 10;   // Global variable
+
+void display() {
+    int x = 20;   // Local variable
+    printf("Inside function, x = %d\n", x);
+}
+
+int main() {
+    printf("Outside function, x = %d\n", x);
+    display();
+    return 0;
+}
